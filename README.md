@@ -27,12 +27,12 @@ $ apt-get upgrade -y
 ### Step 3 Clone the Package in src
 ```
 $ cd /home/workspace/catkin_ws/src
-$ git clone https
+$ git clone https://github.com/mahendraseervi/Extended_kalman_filter.git
 ```
 ### Step 4 Edit the main.launch file
 ```
-Delete this: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/EKFLab.rviz"/>
-Replace with: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/RoboND-EKFLab/EKFLab.rviz"/>
+Delete this: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/mahendra/catkin_ws/src/EKFLab.rviz"/>
+Replace with: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/yourworkspace/catkin_ws/src/EKFLab.rviz"/>
 ```
 ### Step 5 Install Packages Dependancies
 ```
@@ -53,7 +53,11 @@ $ roslaunch main main.launch
 Now, you should see Gazebo and rviz launching. Please note that Gazebo might take up to 3 min to launch!
 
 ## Images :
-### Ball with robot :
-![](images/ball_with_robot.png)
+### Turtlebot world :
+![](images/gazebo.png)
+
+### visualization in rviz :
+![](images/rviz.png)
+
 
 
