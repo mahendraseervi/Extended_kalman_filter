@@ -1,5 +1,5 @@
 # Extended_kalman_filter
-Implementaion of Extended Kalman filter to estimate the robot's pose using sensor fusion in the gazebo world
+Implementaion of Extended Kalman filter to estimate the robot's pose using sensor fusion (wheel encode, IMU and camera sensor) in the gazebo world
 
 ## Ros packages used:
 1. turtlebot_gazebo
@@ -8,7 +8,7 @@ Implementaion of Extended Kalman filter to estimate the robot's pose using senso
 4. turlebot_teleop
 5. rviz
 
-### Turtlebot package:
+### 1. Turtlebot package:
 Clone Package:
 ```
 $ cd /home/workspace/catkin_ws/src
@@ -20,12 +20,11 @@ $ cd /home/workspace/catkin_ws
 $ source devel/setup.bash
 $ rosdep -i install turtlebot_gazebo
 ```
-Build Package:
+
+### 2. robot_pose_ekf package:
+Clone Package:
 ```
-$ catkin_make
-$ source devel/setup.bash
+$ cd /home/workspace/catkin_ws/src/
+$ git clone https://github.com/udacity/robot_pose_ekf 
 ```
-Launch Nodes:
-```
-$ roslaunch turtlebot_gazebo turtlebot_world.launch
-```
+Remap the ros topics of turtlebot in the robot_pose_ekf.launch file
