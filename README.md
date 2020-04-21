@@ -1,6 +1,6 @@
 # Extended_kalman_filter
 Implementaion of Extended Kalman filter to estimate the robot's pose using sensor fusion (wheel encode, IMU and camera sensor) in the gazebo world.
-In the end, you will be able to drive the robot around in simulation and observe the Odom and EKF trajectories.
+In the end, you will be able to drive the robot around in simulation and observe the Odom and EKF trajectories
 
 ## Ros packages used:
 1. turtlebot_gazebo
